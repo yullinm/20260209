@@ -696,3 +696,4 @@ index bf85c2e77c3dd41f9a304cb5e131777fbfac5e88..05866f4759de5380037b9ce5d0927fe3
    - Streamlit Cloud 사용 시: `st.secrets["OPENAI_API_KEY"]` 같은 방식으로 키를 보관하세요.
  """
      )
+
