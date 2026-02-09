@@ -1,8 +1,9 @@
 diff --git a/app.py b/app.py
-index bf85c2e77c3dd41f9a304cb5e131777fbfac5e88..05866f4759de5380037b9ce5d0927fe31ec1976b 100644
+index bf85c2e77c3dd41f9a304cb5e131777fbfac5e88..2a7353db828ee980db43cfbc8db804a04d7e071e 100644
 --- a/app.py
 +++ b/app.py
-@@ -1,93 +1,251 @@
+@@ -1,93 +1,252 @@
++# -*- coding: utf-8 -*-
  # app.py
  # Streamlit: AI 습관 트래커 (단일 파일)
  # 실행: streamlit run app.py
@@ -258,7 +259,7 @@ index bf85c2e77c3dd41f9a304cb5e131777fbfac5e88..05866f4759de5380037b9ce5d0927fe3
              "date": _today_str(),
              "habits": {k: False for k, _, _ in HABITS},
              "mood": 7,
-@@ -311,249 +469,266 @@ def generate_report(
+@@ -311,249 +470,266 @@ def generate_report(
                          if t:
                              chunks.append(t)
                  txt = "\n".join(chunks).strip() if chunks else None
@@ -696,4 +697,5 @@ index bf85c2e77c3dd41f9a304cb5e131777fbfac5e88..05866f4759de5380037b9ce5d0927fe3
    - Streamlit Cloud 사용 시: `st.secrets["OPENAI_API_KEY"]` 같은 방식으로 키를 보관하세요.
  """
      )
+
 
